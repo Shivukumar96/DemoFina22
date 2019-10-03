@@ -1,4 +1,4 @@
-package jen1;
+
 
 import java.util.Scanner;
 
