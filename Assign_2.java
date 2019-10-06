@@ -32,7 +32,8 @@ public class Assign_2
 		upload.sendKeys("C:\\Users\\u721200\\eclipse-workspace\\Assignment\\src\\Assign_2.java");
 		
         driver.findElement(By.id("commit-description-textarea")).sendKeys("assignment program   12345");
-        driver.findElement(By.className("btn btn-primary js-blob-submit")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("button[data-edit-text='Commit changes']")).click();
 		
 		
 
