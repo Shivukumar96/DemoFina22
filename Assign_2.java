@@ -16,6 +16,8 @@ public class Assign_2
 		driver.manage().window().maximize();
 		driver.get("https://github.com");
 		
+		//github working
+		
 		driver.findElement(By.xpath("/html/body/div[1]/header/div/div[2]/div[2]/a[1]")).click();
 		
 		driver.findElement(By.id("login_field")).sendKeys("shivu10aug96@gmail.com");
@@ -34,6 +36,11 @@ public class Assign_2
         driver.findElement(By.id("commit-description-textarea")).sendKeys("assignment program   12345");
         Thread.sleep(2000);
         driver.findElement(By.cssSelector("button[data-edit-text='Commit changes']")).click();
+        
+        //jenkins start working
+        
+        driver.get("http://localhost:8080/");
+        
 		
 		
 
